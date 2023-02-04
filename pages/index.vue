@@ -8,6 +8,7 @@ const { pending, error, data, refresh } = useFetch<CatResponse[]>(
 
 <template>
   <div>
+    <h1>🐈Pretty Cats Here!</h1>
     <button class="refresh-button" @click="refresh">
       更新
     </button>
@@ -18,6 +19,19 @@ const { pending, error, data, refresh } = useFetch<CatResponse[]>(
 </template>
 
 <style scoped>
+h1{
+  text-align: center;
+}
+
+.refresh-button{
+  display: block;
+  background-color: rgb(223, 133, 228);
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  padding: 5px 20vw;
+}
+
 .content {
   margin: auto;
 }
