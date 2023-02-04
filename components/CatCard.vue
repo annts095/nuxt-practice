@@ -9,7 +9,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <div>
+  <div class="card-img-wrapper">
     <img
       class="card-img"
       :src="catData.url"
@@ -20,10 +20,14 @@ defineProps<Props>()
 </template>
 
 <style scoped>
+
+.card-img-wrapper {
+  width: 100%;
+}
 .card-img {
   border-radius: 8px;
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 </style>
